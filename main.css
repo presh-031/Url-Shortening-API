@@ -24,13 +24,14 @@
 body {
   font-family: var(--poppins);
 }
+
 /* Header section */
 header {
   display: flex;
   justify-content: space-between;
-  /* outline: 1px solid red; */
   padding: 2rem 2rem 0 2rem;
 }
+
 header .left-section {
   display: flex;
 }
@@ -38,37 +39,50 @@ header .left-section {
 header .left-section ul {
   display: none;
 }
+
 header .right-section div:first-child {
-  /* outline: 1px solid red; */
   display: none;
 }
+
 header .right-section div:last-child {
-  /* outline: 1px solid red; */
 }
+
 header .right-section div:last-child ion-icon {
   font-size: 32px;
 }
+
 /* Hero Section */
 .hero-section {
   display: flex;
   flex-direction: column-reverse;
   margin-top: 2rem;
 }
+
 .hero-section div:nth-child(1) {
   text-align: center;
 }
+
 .hero-section div:nth-child(1) h1 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
+
 .info-text {
   font-size: 1.5rem;
-  width: 75%;
+  width: 76%;
   text-align: center;
   margin: 0 auto;
   color: var(--grayish-violet);
   line-height: 1.5em;
-  /* outline: 1px solid red; */
 }
+
+.hero-text {
+  width: 82%;
+  font-size: 2rem;
+}
+
 button {
   margin-top: 3rem;
   padding: 1.2rem 3rem;
@@ -79,9 +93,11 @@ button {
   font-size: 2rem;
   font-weight: 700;
 }
+
 .hero-section div:nth-child(2) {
   /* width: 100%; */
 }
+
 .hero-section div:nth-child(2) img {
   width: 100%;
   padding-left: 4rem;
@@ -114,6 +130,7 @@ button {
   position: relative;
   top: -6.3rem;
 }
+
 .url-section input {
   display: block;
   width: 100%;
@@ -121,7 +138,9 @@ button {
   outline: none;
   border: none;
   font-size: 1.2rem;
+  border-radius: 2px;
 }
+
 .url-section button {
   width: 100%;
   margin-top: 1rem;
@@ -131,6 +150,7 @@ button {
   background-color: var(--cyan);
   color: #fff;
   font-size: 1.6rem;
+  border-radius: 2px;
   font-weight: 700;
 }
 
@@ -138,6 +158,7 @@ button {
 .statistics-section {
   text-align: center;
 }
+
 .statistics-section h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
@@ -146,6 +167,7 @@ button {
 .statistics-section .cards-container {
   margin: 8rem 0 0 0;
 }
+
 .statistics-section div .card {
   background-color: #fff;
   width: 80%;
@@ -153,6 +175,7 @@ button {
   /* margin-bottom: 2rem; */
   padding-bottom: 2rem;
 }
+
 .statistics-section div .card div {
   /* outline: 1px solid red; */
   width: fit-content;
@@ -165,11 +188,13 @@ button {
   background-color: var(--dark-violet);
   border-radius: 50%;
 }
+
 .statistics-section div .card p:first-of-type {
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
 .cyan-lines {
   margin: 0;
   display: inline-block;
@@ -183,19 +208,47 @@ button {
   background: var(--dark-violet) url("./images/bg-boost-mobile.svg");
   padding: 10rem 0 7.5rem 0;
 }
+
 .boost-links-section h2 {
   color: #fff;
   font-size: 2.5rem;
 }
+
 .boost-links-section button {
   margin-top: 2rem;
 }
+
 /* Footer Section */
 footer {
   background: var(--very-dark-violet);
-  color: #fff;
+  color: var(--gray);
+  text-align: center;
+  padding-bottom: 4rem;
 }
+
 footer div:nth-child(1) p {
   font-size: 3rem;
   font-weight: 700;
+  padding-top: 4rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+footer div .links-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  color: #fff;
+}
+
+footer div ul li {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+footer div:last-child {
+  margin: 2rem 0 0 0;
+  display: flex;
+  column-gap: 2rem;
+  justify-content: center;
 }
