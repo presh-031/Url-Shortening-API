@@ -92,3 +92,33 @@ header .right-section div:last-child ion-icon {
 }
 
 /* Url Shortening Section */
+.url-section {
+  width: 80%;
+  margin: 0 auto;
+  outline: 1px solid red;
+  padding: 2rem;
+  margin-top: 8rem;
+  background-color: var(--dark-violet);
+  background-image: url("./images/bg-shorten-mobile.svg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+.url-section input {
+  display: block;
+  width: 100%;
+  padding: 1.2rem;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+}
+.url-section button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  border: none;
+  background-color: var(--cyan);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
