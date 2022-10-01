@@ -12,25 +12,29 @@
   --poppins: "poppins", sans-serif;
 
   /* Colors */
+  --cyan: hsl(180, 66%, 49%);
+  --dark-violet: hsl(257, 27%, 26%);
+  --red: hsl(0, 87%, 67%);
+  --gray: hsl(0, 0%, 75%);
+  --grayish-violet: hsl(257, 7%, 63%);
+  --very-dark-blue: hsl(255, 11%, 22%);
+  --very-dark-violet: hsl(260, 8%, 14%);
 }
 
 body {
   font-family: var(--poppins);
 }
+/* Header section */
 header {
   display: flex;
   justify-content: space-between;
   /* outline: 1px solid red; */
-  padding: 2rem 1rem 0 1rem;
+  padding: 2rem 2rem 0 2rem;
 }
 header .left-section {
   display: flex;
 }
-header .left-section p {
-  /* outline: 1px solid red; */
-  font-size: 2rem;
-  font-weight: 700;
-}
+
 header .left-section ul {
   display: none;
 }
@@ -44,3 +48,47 @@ header .right-section div:last-child {
 header .right-section div:last-child ion-icon {
   font-size: 32px;
 }
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 2rem;
+}
+.hero-section div:nth-child(1) {
+  text-align: center;
+}
+.hero-section div:nth-child(1) h1 {
+  font-size: 3.5rem;
+}
+.hero-section div:nth-child(1) p {
+  font-size: 1.5rem;
+  width: 75%;
+  margin: 0 auto;
+  color: var(--grayish-violet);
+  line-height: 1.5em;
+  outline: 1px solid red;
+}
+.hero-section div:nth-child(1) button {
+  margin-top: 3rem;
+  padding: 1.2rem 3rem;
+  border-radius: 3rem;
+  background-color: var(--cyan);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.hero-section div:nth-child(2) {
+  /* width: 100%; */
+}
+.hero-section div:nth-child(2) img {
+  width: 100%;
+  padding-left: 4rem;
+  /* height: 30rem; */
+  /* position: relative; */
+  left: 4rem;
+  outline: 1px solid red;
+  /* margin-left: 3rem; */
+}
+
+/* Url Shortening Section */
