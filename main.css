@@ -60,9 +60,10 @@ header .right-section div:last-child ion-icon {
 .hero-section div:nth-child(1) h1 {
   font-size: 3.5rem;
 }
-.hero-section div:nth-child(1) p {
+.info-text {
   font-size: 1.5rem;
   width: 75%;
+  text-align: center;
   margin: 0 auto;
   color: var(--grayish-violet);
   line-height: 1.5em;
@@ -91,17 +92,26 @@ header .right-section div:last-child ion-icon {
   /* margin-left: 3rem; */
 }
 
+/* Url and stats section */
+.url-and-stats-section {
+  /* border: 1px solid red; */
+  margin-top: 8rem;
+  background-color: rgb(235, 234, 234);
+}
+
 /* Url Shortening Section */
 .url-section {
   width: 80%;
   margin: 0 auto;
   /* outline: 1px solid red; */
   padding: 2rem;
-  margin-top: 8rem;
   background-color: var(--dark-violet);
   background-image: url("./images/bg-shorten-mobile.svg");
-  background-repeat: repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+  position: relative;
+  top: -6.3rem;
 }
 .url-section input {
   display: block;
@@ -121,4 +131,14 @@ header .right-section div:last-child ion-icon {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 700;
+}
+
+/*Advanced statistics section  */
+.statistics-section {
+  /* margin-top: 8rem; */
+  text-align: center;
+}
+.statistics-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
