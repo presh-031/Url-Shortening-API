@@ -97,6 +97,7 @@ button {
   /* border: 1px solid red; */
   margin-top: 8rem;
   background-color: rgb(235, 234, 234);
+  padding-bottom: 8rem;
 }
 
 /* Url Shortening Section */
@@ -174,4 +175,27 @@ button {
   display: inline-block;
   height: 10rem;
   border: 0.4rem solid var(--cyan);
+}
+
+/* Boost Links Section */
+.boost-links-section {
+  text-align: center;
+  background: var(--dark-violet) url("./images/bg-boost-mobile.svg");
+  padding: 10rem 0 7.5rem 0;
+}
+.boost-links-section h2 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.boost-links-section button {
+  margin-top: 2rem;
+}
+/* Footer Section */
+footer {
+  background: var(--very-dark-violet);
+  color: #fff;
+}
+footer div:nth-child(1) p {
+  font-size: 3rem;
+  font-weight: 700;
 }
