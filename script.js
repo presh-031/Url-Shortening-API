@@ -54,7 +54,8 @@ function copyToClipBoard(e) {
 }
 
 function updateBtnStyles(e) {
-  const copyBtns = document.querySelectorAll("copy-btn");
+  const copyBtns = document.querySelectorAll("#copy-btn");
+  console.log(copyBtns);
   copyBtns.forEach((btn) => {
     btn.innerHTML = "Copy";
     btn.classList.remove("clicked");
