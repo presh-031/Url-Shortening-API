@@ -138,18 +138,16 @@ button {
   width: 100%;
   padding: 1.2rem;
   outline: none;
-  border: none;
+  /* border: none; */
   font-size: 1.2rem;
   border-radius: 2px;
 }
-.no-input {
-  border: 2px solid var(--red);
-}
+
 .url-section p {
   color: var(--red);
   margin-top: 0.2rem;
   font-style: italic;
-  display: none;
+  /* display: none; */
 }
 
 .url-section button {

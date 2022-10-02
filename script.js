@@ -1,9 +1,11 @@
 "use strict";
 // let link;
+const inputEl = document.querySelector(".link");
+const errorMsg = document.getElementById("error-msg");
 
 getLink();
+removeErrorMsg();
 
-const inputEl = document.querySelector(".link");
 function getLink() {
   const form = document.querySelector("form");
 
@@ -12,17 +14,21 @@ function getLink() {
     const link = inputEl.value;
     if (link) {
       getShortenedLink(link);
+      removeErrorMsg();
     } else {
       showErrorMsg();
-      console.log("empty input");
     }
   });
 }
-
 function showErrorMsg() {
-  const errorMsg = document.getElementById("error-msg");
+  // const inputEl = document.querySelector(".link");
   errorMsg.style.display = "block";
-  inputEl.classList.add("no-input");
+  inputEl.style.border = "2px solid var(--red)";
+}
+
+function removeErrorMsg() {
+  errorMsg.style.display = "none";
+  inputEl.style.border = "none";
 }
 
 async function getShortenedLink(link) {
