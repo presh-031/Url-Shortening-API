@@ -7,7 +7,9 @@
 }
 
 :root {
+  scroll-behavior: smooth;
   font-size: 62.5%;
+
   /* Fonts */
   --poppins: "poppins", sans-serif;
 
@@ -154,22 +156,46 @@ button {
   font-weight: 700;
 }
 #links {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
+  width: 80%;
+  font-size: 1.2rem;
+  margin: 0 auto;
 }
 #links .link {
   background-color: #fff;
   margin-bottom: 1rem;
+  padding-bottom: 1.2rem;
+  border-radius: 10px;
+  /* padding: 0 1.2rem 1.2rem; */
   /* display: flex;
   align-items: center;
   justify-content: space-between; */
+}
+#links .link > p {
+  padding: 1.5rem 1.2rem 1.5rem 1.2rem;
+  border-bottom: 1px solid var(--gray);
+  color: var(--very-dark-blue);
+  /* outline: 1px solid red; */
+  /* font-size: 1.2rem; */
 }
 #links .link div {
   /* display: flex;
   align-items: center; */
 }
+#links .link div p {
+  color: var(--cyan);
+
+  padding: 1.2rem;
+}
 #links .link div button {
   margin: 0;
   border-radius: 10px;
+  width: calc(100% - 2.4rem);
+  padding: 1rem;
+  font-size: inherit;
+  /* margin: 1.2rem; */
+  display: block;
+  margin: 0 auto;
 }
 
 /*Advanced statistics section  */
