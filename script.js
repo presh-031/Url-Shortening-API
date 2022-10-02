@@ -3,8 +3,8 @@
 
 getLink();
 
+const inputEl = document.querySelector(".link");
 function getLink() {
-  const inputEl = document.querySelector(".link");
   const form = document.querySelector("form");
 
   form.addEventListener("submit", (e) => {
@@ -13,13 +13,17 @@ function getLink() {
     if (link) {
       getShortenedLink(link);
     } else {
-      // showErrorMsg();
+      showErrorMsg();
       console.log("empty input");
     }
   });
 }
 
-function showErrorMsg() {}
+function showErrorMsg() {
+  const errorMsg = document.getElementById("error-msg");
+  errorMsg.style.display = "block";
+  inputEl.classList.add("no-input");
+}
 
 async function getShortenedLink(link) {
   try {

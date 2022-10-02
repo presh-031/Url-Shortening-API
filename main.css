@@ -142,6 +142,15 @@ button {
   font-size: 1.2rem;
   border-radius: 2px;
 }
+.no-input {
+  border: 2px solid var(--red);
+}
+.url-section p {
+  color: var(--red);
+  margin-top: 0.2rem;
+  font-style: italic;
+  display: none;
+}
 
 .url-section button {
   width: 100%;
