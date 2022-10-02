@@ -154,6 +154,7 @@ button {
   font-size: 1.6rem;
   border-radius: 2px;
   font-weight: 700;
+  cursor: pointer;
 }
 #links {
   /* outline: 1px solid red; */
@@ -196,6 +197,7 @@ button {
   /* margin: 1.2rem; */
   display: block;
   margin: 0 auto;
+  cursor: pointer;
 }
 .clicked {
   background-color: var(--dark-violet);

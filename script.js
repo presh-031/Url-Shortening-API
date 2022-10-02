@@ -1,5 +1,5 @@
 "use strict";
-let link;
+// let link;
 
 getLink();
 
@@ -9,12 +9,19 @@ function getLink() {
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    link = inputEl.value;
-    getShortenedLink();
+    const link = inputEl.value;
+    if (link) {
+      getShortenedLink(link);
+    } else {
+      // showErrorMsg();
+      console.log("empty input");
+    }
   });
 }
 
-async function getShortenedLink() {
+function showErrorMsg() {}
+
+async function getShortenedLink(link) {
   try {
     const url = `https://api.shrtco.de/v2/shorten?url=${link}`;
     const res = await fetch(url);
