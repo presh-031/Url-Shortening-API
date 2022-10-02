@@ -197,6 +197,9 @@ button {
   display: block;
   margin: 0 auto;
 }
+.clicked {
+  background-color: var(--dark-violet);
+}
 
 /*Advanced statistics section  */
 .statistics-section {

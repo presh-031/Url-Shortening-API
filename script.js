@@ -34,32 +34,32 @@ function updateDomWithLinks(data) {
     <p>${data.result.original_link}</p>
     <div>
       <p id='shortened-link'>${data.result.full_short_link}</p>
-      <button onClick=copyToClipBoard()>Copy</button>
+      <button id='copy-btn' onClick=copyToClipBoard(this)>Copy</button>
     </div>
   </div>`;
 }
 
-function copyToClipBoard() {
-  // // Get the text field
-  // const copyText = document.getElementById("shortened-link");
-
-  // // Select the text field
-  // copyText.select();
-  // copyText.setSelectionRange(0, 99999); // For mobile devices
-
-  // // Copy the text inside the text field
-  // navigator.clipboard.writeText(copyText.value);
-
-  // // Alert the copied text
-  // alert("Copied the text: " + copyText.value);
-
-  const text = document.getElementById("shortened-link").innerHTML;
+function copyToClipBoard(e) {
+  // Async Clipboard API method.
+  const text = e.previousElementSibling.innerHTML;
   navigator.clipboard.writeText(text).then(
     function () {
       console.log("Async: Copying to clipboard was successful!");
+      updateBtnStyles(e);
     },
     function (err) {
       console.error("Async: Could not copy text: ", err);
     }
   );
+}
+
+function updateBtnStyles(e) {
+  const copyBtns = document.querySelectorAll("copy-btn");
+  copyBtns.forEach((btn) => {
+    btn.innerHTML = "Copy";
+    btn.classList.remove("clicked");
+  });
+
+  e.innerHTML = "Copied!";
+  e.classList.add("clicked");
 }
