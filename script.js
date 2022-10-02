@@ -44,11 +44,12 @@ function copyToClipBoard(e) {
   const text = e.previousElementSibling.innerHTML;
   navigator.clipboard.writeText(text).then(
     function () {
-      console.log("Async: Copying to clipboard was successful!");
+      // console.log("Async: Copying to clipboard was successful!");
       updateBtnStyles(e);
     },
     function (err) {
-      console.error("Async: Could not copy text: ", err);
+      // console.error("Async: Could not copy text: ", err);
+      alert("Failed to copy");
     }
   );
 }
