@@ -159,13 +159,13 @@ button {
 #links .link {
   background-color: #fff;
   margin-bottom: 1rem;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 #links .link div {
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
 }
 #links .link div button {
   margin: 0;
